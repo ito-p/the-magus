@@ -1,6 +1,6 @@
 {
   "name": "the-magus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSON generator with combinatorics",
   "main": "index.js",
   "repository": "https://github.com/ito-p/the-magus",
