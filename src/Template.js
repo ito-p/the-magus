@@ -3,17 +3,17 @@
 export default class Template {
   _templateString: string;
 
-  constructor(template: string) {
-    this._templateString = template;
+  constructor(templateData: {[key: string]: any}) {
+    this._templateString = JSON.stringify(templateData);
   }
 
-  embed(combi: { [key: string]: string }) {
-    let json = this._templateString;
+  embed(combi: { [key: string]: string }): {[key: string]: any} {
+    let jsonString = this._templateString;
     Object.keys(combi).forEach(key => {
       const keyString = `$${key}`;
       const value = combi[key];
-      json = json.replace(keyString, value);
+      jsonString = jsonString.replace(keyString, value);
     });
-    return json;
+    return JSON.parse(jsonString);
   }
 }
