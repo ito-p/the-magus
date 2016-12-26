@@ -1,6 +1,6 @@
 {
   "name": "the-magus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "JSON generator with combinatorics",
   "main": "index.js",
   "repository": "https://github.com/ito-p/the-magus",
@@ -15,9 +15,7 @@
   },
   "author": "ito-p <not.1010.number@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "jest-cli": "^18.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
@@ -49,6 +47,7 @@
     "eslint": "^3.12.2",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-flowtype": "^2.29.1",
+    "jest-cli": "^18.0.0",
     "nodemon": "^1.11.0"
   },
   "jest": {
